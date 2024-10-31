@@ -1,10 +1,10 @@
 const { Pool } = require("pg");
 
 const pool = new Pool({
-  user: process.env.PGUSER,
-  host: process.env.PGHOST,
+  user: process.env.PG_USER,
+  host: process.env.PG_HOST,
   database: "dice_game",
-  password: process.env.PGPASSWORD,
+  password: process.env.PG_PASSWORD,
   port: 5432,
 });
 

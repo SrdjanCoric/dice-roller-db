@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+require("dotenv").config();
 const { initializePostgres, pool } = require("./db/postgres");
 const { connectMongo, client } = require("./db/mongodb");
 const gamesRouter = require("./routes/api");
